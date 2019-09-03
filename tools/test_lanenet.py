@@ -17,13 +17,16 @@ import glog as log
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
+import sys
 
-from config import global_config
 from lanenet_model import lanenet
 from lanenet_model import lanenet_postprocess
 
+from config import global_config
 CFG = global_config.cfg
 
+sys.path.append('/Users/lvst/workspace/lanenet-lane-detection')
+sys.path.append('/Users/lvst/workspace/lanenet-lane-detection/config')
 
 def init_args():
     """
